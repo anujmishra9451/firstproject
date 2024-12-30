@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inline stylesheet</title>
+<style>
+body{
+background-color:green;
+}
+div{
+width:1200px;
+height:200px;
+background-color:white
+}
+h1{
+color:red;
+font-size:60px;
+font-family:sans-serif;
+text-align:center;
+}
+button{
+background-color:black;
+border:none;
+color:white;
+width:160px;
+height:30px;
+font-size:20px
+}
+nav{
+width:1200px;
+background-color:yellow;
+height:50px;
+FONT-SIZE:30PX;
+font-faimly:calibri;
+font-weight:bold;
+}
+input{
+width:1200px;
+height:50px;
+font-size:20px;
+text-align:center;
+}
+.image{
+    background-position: center;
+    background-size: contain;
+}
+</style>
+</head>
+<body>
+<center>
+<div>
+<h1> Ditrap Computer Education</h1>
+<button width="400"height="400">HOME</button>
+<button id="btn" class="image">Images</button>
+<button>VIdeos</button>
+<button>Contact</button>
+<button>about</button>
+</div>
+<nav>
+WELCOME TO MY FIRST INTRNAL WEBPAGE
+</nav>
+<form>
+<input type="search"name="search"placeholder="search products form here"/>
+
+</form>
+</center>
+<script>
+const btn = document.getElementById("btn");
+btn.addEventListener("dblclick", () => {
+    console.log("run");
+    btn.style.backgroundImage = 'url("https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg")';
+});
+
+</script>
+</body>
+</html>
