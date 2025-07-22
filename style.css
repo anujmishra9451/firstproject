@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    background-color:royalblue;
+}
+.cantent {
+    font-size: 20px;
+    text-align: center;
+    color: blue;
+}
+.outer {
+    height: 300px;
+    width: 350px;
+    perspective: 900px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.outer {
+    height: 300px;
+    width: 350px;
+    perspective: 900px;
+    border-radius: 60%;
+    overflow: hidden;
+}
+.outer2 {
+    margin-left: 10px;
+    margin-top: 270px;
+    height: 300px;
+    width: 350px;
+    perspective: 900px;
+    border-radius: 60%;
+    overflow: hidden;
+}
+.outer3 {
+    margin-left: 10px;
+    margin-top: 30px;
+    height: 300px;
+    width: 350px;
+    perspective: 900px;
+    border-radius: 60%;
+    overflow: hidden;
+}
+.outer4 {
+     margin-left: 10px;
+     margin-top: 280px;
+     height: 300px;
+     width: 350px;
+     perspective: 900px;
+     border-radius: 60%;
+     overflow: hidden;      
+}
+        
+.inner {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 5s;
+    position: relative;
+}
+
+.font,
+.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.back {
+    background-color: gray;
+    transform: rotatex(-180deg);
+    height: 300px;
+}
+
+.back h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.back p {
+    font-size: 20px;
+     text-align: center;
+}
+
+.outer:hover .inner {
+    transform: rotatex(-180deg);
+}
+
+.outer2:hover .inner {
+    transform: rotatex(180deg);
+}
+
+.outer3:hover .inner {
+    transform: rotatex(-180deg);
+ }
+
+ .outer4:hover .inner {
+     transform: rotate(180deg);
+}
+    
